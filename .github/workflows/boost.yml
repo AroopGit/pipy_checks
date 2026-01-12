@@ -1,9 +1,9 @@
 name: PyPI Metadata Boost
 
 on:
-  # Run every hour
+  # Run every 30 minutes
   schedule:
-    - cron: '0 * * * *'  # At minute 0 of every hour
+    - cron: '*/30 * * * *'  # Every 30 minutes
   
   # Allow manual triggering
   workflow_dispatch:

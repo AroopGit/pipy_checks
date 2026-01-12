@@ -13,8 +13,8 @@ from typing import List
 # Configuration
 PACKAGE_NAME = "xgboost-tuner-pack"  # Replace with your package name
 PYPI_JSON_URL = f"https://pypi.org/pypi/{PACKAGE_NAME}/json"
-NUM_REQUESTS = 100
-NUM_THREADS = 10
+NUM_REQUESTS = 1000  # Increased from 100 for bigger boost
+NUM_THREADS = 20     # Increased from 10 for faster execution
 
 # Common pip User-Agent strings for rotation
 USER_AGENTS = [
